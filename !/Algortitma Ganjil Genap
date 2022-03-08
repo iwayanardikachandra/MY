@@ -1,0 +1,25 @@
+Algortitma Ganjil Genap
+
+Deklarasi:
+int i = 1, void evenNumbers(int n), void oddNumbers(int n);
+
+Proses:
+void function evenNumbers(int n)
+	for i = 1 to n
+		if (i%2==0), then
+		print i
+	next i
+void function oddNumbers(int n)
+	for i = 1 to n
+		if (i%2!=0), then
+		print i
+	next i
+write ("Enter the value of N (limit):")
+input (n)
+write ("EVEN numbers are...)
+evenNumbers(n)
+write ("ODD numbers are...)
+oddNumbers(n)
+End case
+
+Source : https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/

@@ -1,0 +1,75 @@
+Algoritma kasir restoran;
+
+Deklarasi 
+Pilihan, menu_makanan, pesanan, total=0, minum, TM=0, makanan [4] = {18.000, 28.000,32.000,42.000}, Minuman [4] = {7.000, 5.000, 8.000, 6.000, pendapatan, diskon = 25%, final = 0.0, back, loop, yn, drink_order, food_order
+
+Begin 
+while true do line 7 to line 73: 
+	input (food_order)
+	if food_order == y:
+		output ("1. Paket panas 1 : 18.000;2. Paket panas 2 : 28.000;3. Paket mantap 1 : 32.000;4. Paket mantap 2 : 42.000")
+		input (menu_makanan)
+		CASE menu_makanan
+			1 = input (pesanan); total <- makanan[menu_makanan-1] * pesanan;
+			2 = input (pesanan); total <- makanan[menu_makanan-1] * pesanan;
+			3 = input (pesanan); total <- makanan[menu_makanan-1] * pesanan;
+			4 = input (pesanan); total <- makanan[menu_makanan-1] * pesanan;
+			Otherwise = output ("Maaf menu yang anda ingin belum ready :)")
+
+		END CASE
+		output ("total harga makanan : ", total)
+
+		input (drink_order)
+		if drink_order == y:
+			output ("1. MOCCA FLOAT : 7.000; 2. PEPSI : 5.000; 3. CHOCOLATE : 8.000; 4. TEH BOTOL : 6.000")
+			input (menu_drink)
+			CASE menu_drink
+				1 = input (minum); tm <- minuman[menu_drink-1] * minum;
+				2 = input (minum); tm <- minuman[menu_drink-1] * minum;
+				3 = input (minum); tm <- minuman[menu_drink-1] * minum;
+				4 = input (minum); tm <- minuman[menu_drink-1] * minum;
+				Otherwise = output ("Pilihlah sesuai yang ada di menu!";)
+
+			END CASE 
+			output ("total harga minuman : ", tm)
+
+
+	else:
+		output ("1. MOCCA FLOAT : 7.000; 2. PEPSI : 5.000; 3. CHOCOLATE : 8.000; 4. TEH BOTOL : 6.000")
+		input (menu_drink)
+		CASE menu_drink
+			1 = input (minum); tm <- minuman[menu_drink-1] * minum;
+			2 = input (minum); tm <- minuman[menu_drink-1] * minum;
+			3 = input (minum); tm <- minuman[menu_drink-1] * minum;
+			4 = input (minum); tm <- minuman[menu_drink-1] * minum;
+			Otherwise = output <- "Pilihlah sesuai yang ada di menu!";
+
+		END CASE 
+		output ("total harga minuman : ", tm)
+
+
+	total <- total + tm
+	if total >= 200.000:
+		final <- total - (total*disc)
+		output ("anda sudah berbelanja lebih dari Rp. 200.000")
+		output ("maka harga belanja anda menjadi", final)
+	else :
+		final <- total;
+		output ("harga yang harus anda bayar adalah : ", final)
+
+	output ("Masukan Uang bayar : ")
+	input (pay)
+	back <- pay - final;
+	output ("kembalian anda : ", back)
+	pendapatan <- pendapatan + final
+	output ("Apakah anda ingin melakukan pesanan ulang? (y/n)")
+	input (yn)
+	if yn == n:
+		clear screen
+		output ("Terimakasih sudah menggunakan system kami")
+		ouput ("Pendapatan hari ini : ", pendapatan)
+		exit
+	else:
+		clear screen
+
+

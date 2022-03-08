@@ -1,0 +1,18 @@
+Pilihan, menu_makanan, pesanan, total=0, minum, TM=0, makanan [4] = {18.000, 28.000,32.000,42.000}, Minuman [4] = {7.000, 5.000, 8.000, 6.000, pendapatan, diskon = 25%, final = 0.0, back, loop, yn, drink_order, food_order
+while food_order do baris 3 sampai baris 7
+1. Paket panas 1 : 18.000;2. Paket panas 2 : 28.000;3. Paket mantap 1 : 32.000;4. Paket mantap 2 : 42.000
+input menu_makanan
+input pesanan
+total = makanan[menu_makanan-1] * pesanan
+print out "Total harga makanan = " + total
+while drink_order do baris 9 sampai baris 14
+Mocafloat  : 7.000;Pepsi : 5.000;chocolate : 8.000;the botol : 6.000
+input menu_drink
+input minum
+tm = minuman[menu_drink - 1] * minum
+print out "total harga minuman" + tm
+total = total + tm
+while total >= 200.000 do .... sampai ...
+
+
+

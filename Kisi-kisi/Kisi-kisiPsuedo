@@ -1,0 +1,27 @@
+Deklarasi:
+n=15;m=10;i=2
+
+Deskripsi:
+for i <= 2 to 5
+	j = i
+	while j <= 3, do line 7 sampai line 11
+	k = j
+	do line 10 sampai line 11,while (k<=3)
+	n <= n + m
+	k <= k + 1
+	j <= j + 1
+next i
+write (n)
+
+
+------------------------------------------------------------------------------------------
+
+Deklarasi:
+a, b, c;
+
+Deskripsi:
+if (a>10), statement
+	if (b<15),print statement c = a + b; a = b; b = c; total = c + a + b
+	else, print statement c = a * b; a = c;b = c; total = a + b + c 
+else, print statement c = a-b; b = c; a = b; total = b + c + a
+write a, b, c, total
